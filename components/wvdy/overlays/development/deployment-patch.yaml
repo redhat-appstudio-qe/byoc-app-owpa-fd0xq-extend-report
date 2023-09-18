@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: wvdy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-xfja-tenant/byoc-app-owpa/wvdy@sha256:b58c8a620940e8813ecb74ff1e05cf575f8b58ff3548623f96ec5b94945c787e
+        name: my-java-quarkus
+        resources: {}
+status: {}
